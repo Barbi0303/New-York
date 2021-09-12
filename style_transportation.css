@@ -1,0 +1,66 @@
+/*------------------------------------*\
+  GENERAL STYLES
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:      url(assets/transportation_nyc.jpg) repeat center fixed;
+  background-size: cover;
+
+}
+
+
+
+
+/*------------------------------------*\
+  STYLES
+\*------------------------------------*/
+
+h1 {
+  font-family: 'Fuggles', cursive;
+  font-size:   5rem;
+  text-align:  center;
+  line-height: 0.8;
+}
+
+
+.media-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size:   1.1rem;
+  line-height: 1.4;
+  text-align:  left;
+  color:       rgba(255, 255, 255, 0.8);
+}
+
+
+.subtitle {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size:   1.7rem;
+  line-height: 2rem;
+  color:       antiquewhite;
+  text-align:  center;
+}
+
+.media-image {
+  width:            12.5rem;
+  height:           8.5rem;
+  border-radius:    50%;
+  background-color: #665;
+}
+
+
+/*------------------------------------*\
+  TRANSFORMATION
+\*------------------------------------*/
+
+.media-object {
+  transition: all .5s ease-out .1s;
+}
+
+.media-object:hover {
+  box-shadow: 3px 6px 3px 0 lightgrey;
+  transform:  scale(1.05, 1.1);
+}

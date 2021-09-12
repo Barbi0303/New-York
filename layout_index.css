@@ -1,0 +1,124 @@
+/*------------------------------------*\
+  LAYOUT
+\*------------------------------------*/
+
+.container {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:              10px;
+  grid-auto-rows:        minmax(100px, auto);
+
+}
+
+.header {
+  grid-column: 1 / 4;
+  grid-row:    1/ 2;
+}
+
+.main {
+  grid-column: 1 / 4;
+  grid-row:    2 / 8;
+}
+
+.sections {
+  display:               grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows:    repeat(4, 10.5em);
+}
+
+.menu-item {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  border:          4px ridge;
+  border-color:    rgba(222, 223, 223, 0.8);
+}
+
+
+.footer {
+  grid-column: 1 / 4;
+}
+
+.test {
+ display: none;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ height: 50%;
+ width: 50%;
+ overflow: auto;
+ background-color: blue;
+}
+
+/* LAYOUT - CONTACT LINKS */
+
+.links {
+  display:         flex;
+  height:          4rem;
+  justify-content: space-around;
+  align-items:     center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  TRANSFORMATION
+\*------------------------------------*/
+
+.contact-links {
+  transition: all .5s ease-out .1s;
+}
+
+.contact-links:hover {
+  transform: scale(1.05, 1.1);
+}
+
+
+
+/* még nem látogatott link */
+
+a:link {
+    color: rgba(14, 14, 20, 0.8);
+}
+
+
+/* már meglátogatott link */
+
+a:visited {
+  color: rgba(14, 14, 20, 0.8);
+}
+
+
+/* kurzor alatti link */
+
+a:hover {
+  color: rgba(255, 221, 0, 1);
+}
+
+
+/* kiválasztott link */
+a:active {
+  color:rgba(255, 99, 71, 1)
+}
+
+
+
+
+/*------------------------------------*\
+  MEDIA QUERY
+\*------------------------------------*/
+
+@media (min-width: 768px) {
+  
+  .menu-link {
+    font-size: 2.5rem;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+}

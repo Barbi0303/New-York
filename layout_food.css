@@ -1,0 +1,78 @@
+/*------------------------------------*\
+  LAYOUT
+\*------------------------------------*/
+
+.media-object {
+  max-width: 95vw;
+  padding:   1rem;
+  margin:    1rem 1.6rem 1rem 1.6rem;
+}
+
+ul {
+  margin-left: .7rem;
+}
+
+.media-image {
+  float: left;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  POSITIONS
+\*------------------------------------*/
+
+.link {
+  display:      inline-block;
+  position:     absolute;
+  right:        .5vw;
+  top:          1vh;
+  width:        3rem;
+  text-align:   center;
+  color:        darkblue;
+  cursor:       pointer;
+}
+
+
+
+
+
+/*------------------------------------*\
+  MEDIA QUERY
+\*------------------------------------*/
+
+@media (min-width: 768px) {
+  
+  .media-object {
+    display: inline-block;
+  }
+  
+  .media-text {
+    font-size: 1.1rem;
+  }
+  
+
+  .media-image {
+    float:  right;
+    margin: 1rem 1rem;
+  }
+  
+}
+
+@media (min-width: 1440px) {
+  
+  .media-object {
+    margin: auto 2rem;
+  }
+  
+  .media-text {
+    font-size: 1.2rem;
+  }
+  
+  li {
+    line-height: 1.4rem;
+  }
+}
