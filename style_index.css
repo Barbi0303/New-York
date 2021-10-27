@@ -7,15 +7,17 @@
 * {
   
   box-sizing: border-box;
+  
 }
 
 body {
-  background:      url(assets/Brooklyn-Bridge.jpg) repeat center;
+  
+  background:      url(assets/Brooklyn-Bridge.jpg) no-repeat center fixed;
   background-size: cover;
   font-family:     'Libre Baskerville', sans-serif;
-  font-size:       1.12rem;
   color:           #444349;
-  line-height:     1.5;
+  line-height:     2;
+  
 }
 
 
@@ -26,34 +28,67 @@ body {
 \*------------------------------------*/
 
 h1 {
+  
   font-family: 'Fuggles', cursive;
-  font-size:   5rem;
+  font-size:   4em;
   text-align:  center;
   color:       rgba(14, 14, 20, 0.8);
+  
 }
 
 h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size:   1.3rem;
+  font-size:   1.1rem;
   text-align:  left;
-  color:       rgba(222, 223, 223, 0.8);
+  color:       rgba(255, 221, 0, 1);
 }
 
 .menu-link {
+  
   text-decoration: none;
-  font-size:       1.4rem;
+  font-size:       1.2em;
   color:           rgba(14, 14, 20, 0.8);
+  
 }
 
-button {
-  text-decoration: none;
-  font-size:       2.5rem;
-  color:           rgba(14, 14, 20, 0.8);
+
+
+/*------------------------------------*\
+  TRANSFORMATION
+\*------------------------------------*/
+
+.contact-links {
+  transition: all .5s ease-out .1s;
 }
 
-.test-content {
-  background-color: white;
-  margin: 20% auto;
-  padding: 20px;
-  width: 75%
+.contact-links:hover {
+  transform: scale(1.05, 1.1);
+}
+
+
+
+/* még nem látogatott link */
+
+a:link {
+  color: orange;
+}
+
+
+/* már meglátogatott link */
+
+a:visited {
+  color: rgba(255, 221, 0, 1);
+}
+
+
+/* kurzor alatti link */
+
+a:hover {
+  color: red;
+}
+
+
+/* kiválasztott link */
+a:active {
+  color: rgba(255, 99, 71, 1);
 }

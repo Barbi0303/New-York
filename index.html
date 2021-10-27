@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" type="text/css" href="style_index.css">
   <link rel="stylesheet" type="text/css" href="layout_index.css">
+  <link rel="stylesheet" type="text/css" href="popup.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -33,13 +34,17 @@
         <li class="menu-item"><a class="menu-link" href="./transportation.html" title="transportation">Közlekedés</a></li>
         <li class="menu-item"><a class="menu-link" href="" title="history">Történelem</a></li>
         <li class="menu-item">
-          <button onclick="openTest();">Érdekességek</button>
-          <div class="test">
-            <div class="test-content">
-              <p class="funfacts">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <span onclick="closeTest();">&times;</span>
+          <!--Creates the popup body-->
+          <div class="popup-frame">
+            <!--Creates the popup content-->
+            <div class="popup-content">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <!--popup's close button-->
+              <button class="close">Bezárás</button> 
+            </div>
           </div>
-          </div>
+          <!--Content shown when popup is not displayed-->
+          <button class="open">Érdekesség</button>
         </li>
         <li class="menu-item"><a class="menu-link" href="" title="sport">Sport</a></li>
         <li class="menu-item"><a class="menu-link" href="" title="celebrity">Hírességek</a></li>
