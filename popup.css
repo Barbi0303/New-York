@@ -20,6 +20,8 @@
  background-color: blue;
 }
 
+
+
 /*------------------------------------*\
   POPUP FRAME STYLES
 \*------------------------------------*/
@@ -44,7 +46,7 @@
 
 .popup-content {
   font-family:    'Noto Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size:      1.2rem;
   text-align:     center;
   vertical-align: middle;
   line-height:    1.95rem;
@@ -59,7 +61,6 @@
 .close {
   
   display:        inline-block;
-  vertical-align: middle;
   border-radius:  30px;
   margin:         .20rem;
   font-size:      1rem;
@@ -88,4 +89,28 @@
 
 button:hover {
   color: red;
+}
+
+
+
+
+/*------------------------------------*\
+  MEDIA QUERY
+\*------------------------------------*/
+
+
+@media (min-width: 768px) {
+  
+  .open {
+    font-size: 2.6em;
+  }
+  
+  .open {
+    font-size: 1.8em;
+  }
+  
+  .popup-content {
+  font-size:      1.4rem;
+}
+  
 }
